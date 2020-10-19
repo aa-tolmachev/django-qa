@@ -27,6 +27,8 @@ def index(request):
     if request.method == 'POST':
         selected_friend = request.POST['friend']
         selected_icecream = request.POST['icecream']
+        question = request.POST['question']
+        print(question)
         
         city = friends_db[selected_friend]
         weather = what_weather(city)
