@@ -12,6 +12,7 @@ def index(request):
     selected_icecream = ''
     # В переменную conclusion будет сохранен текст рекомендации
     conclusion = ''
+    question = ''
 
     for friend in friends_db:
         friends += (f'<input type="radio" name="friend"'
