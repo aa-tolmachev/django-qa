@@ -4,26 +4,17 @@
       <meta charset="UTF-8">
   </head>
   <body>
-      <h1>Анфиса для друзей</h1>
-       <img src="https://pictures.s3.yandex.net/resources/anfisa_1594642601.png">
+      <h1>Прорицатель мира танков</h1>
+       <img src="https://media.giphy.com/media/h8sd5ds2kyFBciEkJ4/giphy.gif">
        <br>
       <p>
-        {{ friend_output }}
-      </p>
-      <p>
-        {{ city_weather }}
-      </p>     
-      <p>
-        {{ conclusion }}
+        {{ question }}
       </p>
       <form action="/" method="post">
-        <h2>Выберите друга</h2>
-          {{ friends|safe }}
-        <h2>Выберите мороженое</h2>
-          {{ icecreams|safe }}
-        <br>
         <h2>Задайте вопрос</h2>
-        <input type="text" id="question" name="question" required size="40"><br>
+        <input type="text" id="question" name="question" required size="40">
+        <br>
+        <br>
         <input type="submit" value="Угостить">
       </form>
 

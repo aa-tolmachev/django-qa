@@ -1,4 +1,4 @@
-# Django settings for anfisa4friends project.
+# Django settings for  project.
 import os
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0+-ju&2t-r7==7gs&_@-#q8om7i&lelii&as$b*sjc(j7xcgvv'
@@ -19,8 +19,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage',
-    'icecream',
-    'anfisa',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +55,7 @@ DATABASES = {
     }
 }
 
-ROOT_URLCONF = 'anfisa4friends.urls'
+ROOT_URLCONF = 'meta.urls'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
