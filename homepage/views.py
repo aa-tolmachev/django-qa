@@ -5,11 +5,12 @@ from django.shortcuts import render
 def index(request):
     question = ''
 
-
     if request.method == 'POST':
-
         question = request.POST['question']
-        print(question)
+        
+
+
+
 
     context = {
 
