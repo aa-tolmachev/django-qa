@@ -4,10 +4,11 @@ from django.shortcuts import render
 
 def index(request):
     question = ''
+    answer = ''
 
     if request.method == 'POST':
         question = request.POST['question']
-        
+        answer = '374'
 
 
 
@@ -15,6 +16,7 @@ def index(request):
     context = {
 
         'question': question,
+        'answer': answer,
 
     }
     return render(request, 'homepage/index.html', context)
