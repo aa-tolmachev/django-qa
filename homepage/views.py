@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import deeppavlov
 
 
 def index(request):
