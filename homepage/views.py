@@ -10,7 +10,7 @@ all_tanks_html = ''
 for tank in all_tanks:
     all_tanks_html += f'<option value="{tank}"></option>'
 
-
+#deeppvalov model
 import deeppavlov
 from deeppavlov import build_model, configs
 global model_qa
@@ -38,7 +38,7 @@ def index(request):
             tank_info = file.read().replace('\n', '. ')
 
         global model_qa
-        answer = model_qa([tank_info],[question])
+        answer = str(model_qa([tank_info],[question]))
 
 
 
