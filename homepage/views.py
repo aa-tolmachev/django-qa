@@ -12,7 +12,7 @@ def index(request):
 
     if request.method == 'POST':
         question = request.POST['question']
-        answer = '374'
+        answer = context
 
 
 
